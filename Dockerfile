@@ -4,8 +4,7 @@ ENV TZ=Pacific/Auckland
 RUN apt-get update
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
 
-RUN apt-get install -y git-all git-lfs
-RUN git lfs install
+RUN apt-get install -y git-all
 
 # Downloading gcloud package
 RUN curl https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz > /tmp/google-cloud-sdk.tar.gz
