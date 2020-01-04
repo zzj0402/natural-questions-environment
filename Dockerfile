@@ -22,3 +22,5 @@ RUN apt-get install -y vim
 WORKDIR ~
 
 RUN git clone https://github.com/google-research/language.git
+
+RUN git clone https://github.com/google-research/bert.git
