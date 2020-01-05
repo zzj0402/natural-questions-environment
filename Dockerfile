@@ -25,6 +25,8 @@ RUN git clone https://github.com/google-research/language.git
 
 RUN git clone https://github.com/google-research/bert.git
 
+RUN cp -r bert language/
+
 RUN gsutil cp -R gs://bert-nq/bert-joint-baseline ./language
 
 RUN mkdir /root/output_dir/
