@@ -34,3 +34,5 @@ RUN gsutil cp -R gs://bert-nq/bert-joint-baseline ./language
 RUN mkdir /root/output_dir/
 
 COPY ./prepare-data.sh /root/language
+
+COPY ./fine-tune.sh /root/language
