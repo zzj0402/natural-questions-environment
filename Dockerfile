@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.9.0-gpu-py3
+FROM tensorflow/tensorflow:1.15.0-gpu-py3
 
 ENV TZ=Pacific/Auckland
 RUN apt-get update
@@ -19,8 +19,10 @@ ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
 
 RUN apt-get install -y vim
 
-WORKDIR ~
+WORKDIR /root/
 
 RUN git clone https://github.com/google-research/language.git
 
 RUN git clone https://github.com/google-research/bert.git
+
+RUN gsutil cp -R gs://bert-nq/bert-joint-baseline ./language
