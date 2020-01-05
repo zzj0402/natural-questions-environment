@@ -25,7 +25,7 @@ RUN git clone https://github.com/google-research/language.git
 
 RUN git clone https://github.com/google-research/bert.git
 
-RUN pip install bert-tensorflow natural-questions
+RUN pip install bert-tensorflow natural-questions --no-dependencies
 
 RUN cp -r bert language/
 
