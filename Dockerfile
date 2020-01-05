@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.15.0-gpu-py3
+FROM tensorflow/tensorflow:1.11.0-gpu-py3
 
 ENV TZ=Pacific/Auckland
 RUN apt-get update
@@ -24,6 +24,8 @@ WORKDIR /root/
 RUN git clone https://github.com/google-research/language.git
 
 RUN git clone https://github.com/google-research/bert.git
+
+RUN pip install bert-tensorflow natural-questions
 
 RUN cp -r bert language/
 
