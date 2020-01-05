@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.11.0-gpu
+FROM tensorflow/tensorflow:1.12.0-gpu
 
 ENV TZ=Pacific/Auckland
 RUN apt-get update
