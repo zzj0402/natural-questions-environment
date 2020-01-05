@@ -31,6 +31,8 @@ RUN cp -r bert language/
 
 RUN gsutil cp -R gs://bert-nq/bert-joint-baseline ./language
 
+RUN gsutil cp -R gs://bert-nq/tiny-dev ./language
+
 RUN mkdir /root/output_dir/
 
 COPY ./prepare-data.sh /root/language
