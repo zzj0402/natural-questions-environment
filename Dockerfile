@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.12.3-gpu-py3
+FROM tensorflow/tensorflow:1.12.3-gpu
 
 ENV TZ=Pacific/Auckland
 RUN apt-get update
