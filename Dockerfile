@@ -38,3 +38,7 @@ RUN mkdir /root/output_dir/
 COPY ./prepare-data.sh /root/language
 
 COPY ./fine-tune.sh /root/language
+
+RUN rm language/language/question_answering/bert_joint/prepare_nq_data.py
+
+COPY ./prepare_nq_data.py /root/language/language/question_answering/bert_joint/
