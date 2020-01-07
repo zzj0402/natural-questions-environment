@@ -14,11 +14,12 @@ gsutil -m cp -R gs://natural_questions/v1.0 ~/Project/NaturalQuestionsData
 ```
 
 ## Run Container
-Mount dataset and run the image:  
+In the host machine, mount dataset and run the image:  
 ```docker run -v ~/Project/NaturalQuestionsData:/root/data -it zzj0402/natural-questions-environment bash```
 
 ## Prepare Data
 
+Inside the Docker container, run:  
 ```shell
 cd /root/language/ && bash /root/language/prepare-data.sh
 ```
