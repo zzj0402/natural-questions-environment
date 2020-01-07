@@ -10,6 +10,7 @@ do
   --max_seq_length=512 \
   --include_unknowns=0.02 \
   --vocab_file=bert-joint-baseline/vocab-nq.txt
+  ((counter++))
 done
 
 echo All $counter training data shards processed!
