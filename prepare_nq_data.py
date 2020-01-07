@@ -77,8 +77,8 @@ def main(_):
     examples_processed += 1
     if FLAGS.max_examples > 0 and examples_processed >= FLAGS.max_examples:
       break
-  tf.logging.info("Examples with correct context retained: %d of %d",
-                  num_examples_with_correct_context, examples_processed)
+  print("Examples with correct context retained: "+
+                  str(num_examples_with_correct_context) + " of " + str(examples_processed))
 
   random.shuffle(instances)
   with tf.python_io.TFRecordWriter(FLAGS.output_tfrecord) as writer:
