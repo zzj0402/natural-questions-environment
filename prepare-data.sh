@@ -2,7 +2,7 @@
 counter=00
 while [ $counter -le 49 ]
 do
-  echo Processing training shard $counter
+  echo Processing training shard $counter ...
   python -m language.question_answering.bert_joint.prepare_nq_data \
   --logtostderr \
   --input_jsonl /root/data/v1.0/train/nq-train-$counter.jsonl.gz \
@@ -12,4 +12,4 @@ do
   --vocab_file=bert-joint-baseline/vocab-nq.txt
 done
 
-echo All $counter  training data shards processed!
+echo All $counter training data shards processed!
