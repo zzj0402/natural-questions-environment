@@ -23,3 +23,7 @@ Inside the Docker container, run:
 ```shell
 cd /root/language/ && bash /root/language/prepare-data.sh
 ```
+
+### Combined TF-Records
+
+There is a combined version of all the data record shards: nq-train.tfrecords.combined
