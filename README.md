@@ -26,4 +26,4 @@ cd /root/language/ && bash /root/language/prepare-data.sh
 
 ### Combined TF-Records
 
-There is a combined version of all the data record shards: nq-train.tfrecords.combined
+There will be a combined version of all the data record shards(nq-train.tfrecords.combined) located in the host environment natural_questions/v1.0
