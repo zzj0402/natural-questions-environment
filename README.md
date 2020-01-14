@@ -10,7 +10,7 @@ Docker Environment for Google Natural Questions
 
 In the host machine, download the dataset:
 ```bash
-gsutil -m cp -R gs://natural_questions/v1.0 ~/Project/NaturalQuestionsData
+gsutil -m cp -R gs://natural_questions/v1.0 /root/Project/NaturalQuestionsData
 ```
 
 ## Run Container
