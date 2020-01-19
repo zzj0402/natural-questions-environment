@@ -17,7 +17,7 @@ RUN mkdir -p /usr/local/gcloud \
 # Adding the package path to local
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
 
-RUN apt-get install -y vim
+RUN apt-get install -y vim htop
 
 WORKDIR /root/
 
